@@ -1,0 +1,29 @@
+{% extends "modules/app/app.twig" %}
+
+{% block head %}
+<link href="{{ site.theme.link }}/modules/blog/blog.css" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+<div class="blog">
+    <h2>Blog</h2>
+    <p>Here is an example of the blog template</p>
+    {% for post in posts %}
+        <div class="media">
+            {% if post.thumbnail.src %}
+            <div class="media-left">
+                <a href="{{ post.link }}"><img class="media-object" alt="" src="{{ post.thumbnail.src }}" width="200" /></a>
+            </div>
+            {% endif %}
+            <div class="media-body">
+                <h4 class="media-heading"><a href="{{ post.link }}">{{ post.title }}</a></h4>
+                {{ post.get_preview(25) }}
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
+
+{% block foot %}
+<script src="{{ site.theme.link }}/modules/blog/blog.js"></script>
+{% endblock %}

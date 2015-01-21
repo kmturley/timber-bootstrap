@@ -1,0 +1,46 @@
+<!doctype html>
+<html {{ site.language_attributes }}>
+<head>
+    <meta charset="{{ site.charset }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{ site.description }}" />
+    <title>{{ wp_title }}</title>
+    <link rel="icon" href="{{ site.theme.link }}/img/favicon.ico" />
+    <link href="{{ site.theme.link }}/libs/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="{{ site.theme.link }}/modules/app/app.css" rel="stylesheet" />
+    {% block head %}
+    {% endblock %}
+</head>
+<body class="app">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    {% for item in menu.get_items %}
+                        <li class="{{ item.classes | join(' ') }}"><a href="{{ item.get_link }}">{{ item.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        {% block content %}
+            Template not found
+        {% endblock %}
+    </div>
+    <script src="{{ site.theme.link }}/libs/jquery/jquery-1.11.2.min.js"></script>
+    <script src="{{ site.theme.link }}/libs/bootstrap/bootstrap.min.js"></script>
+    <script src="{{ site.theme.link }}/modules/app/app.js"></script>
+    {% block foot %}
+    {% endblock %}
+</body>
+</html>
