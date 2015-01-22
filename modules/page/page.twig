@@ -1,0 +1,18 @@
+{% extends "modules/app/app.twig" %}
+
+{% block head %}
+<link href="{{ site.theme.link }}/modules/page/page.css" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+<div class="page">
+    <div class="page-header">
+        <h1>{{ post.title }}</h1>
+    </div>
+    {{ post.content }}
+</div>
+{% endblock %}
+
+{% block foot %}
+<script src="{{ site.theme.link }}/modules/page/page.js"></script>
+{% endblock %}

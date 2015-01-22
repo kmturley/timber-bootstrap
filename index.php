@@ -26,9 +26,9 @@ if (is_singular()) {
 
 // switch template based on page type
 if (is_single()) {
-    $template = 'app/app';
+    $template = 'blog-post/blog-post';
 } else if (is_page()) {
-    $template = 'app/app';
+    $template = 'page/page';
 } else if (is_home()) {
     $template = 'blog/blog';
 } else if (is_category()) {

@@ -1,0 +1,19 @@
+{% extends "modules/app/app.twig" %}
+
+{% block head %}
+<link href="{{ site.theme.link }}/modules/blog-post/blog-post.css" rel="stylesheet" />
+{% endblock %}
+
+{% block content %}
+<div class="blog-post">
+    <div class="page-header">
+        <h1>{{ post.title }}</h1>
+    </div>
+    <p class="blog-author">By <a href="{{post.author.path}}"> {{ post.author.name }} </a><span>&bull;</span> {{ post.post_date|date }}</p>
+    {{ post.content }}
+</div>
+{% endblock %}
+
+{% block foot %}
+<script src="{{ site.theme.link }}/modules/blog-post/blog-post.js"></script>
+{% endblock %}
