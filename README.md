@@ -1,12 +1,12 @@
-timber-bootstrap-sass
+Timber Bootstrap Sass
 ===========
-Timber and Twitter Bootstrap combined into one very useful WordPress theme
-Preprocessed via sass (scss), compiled via gulp, and refreshed via BrowserSync
-    WordPress `https://wordpress.org/`
-    Timber `http://upstatement.com/timber/`
-    Twitter Bootstrap `http://getbootstrap.com/`
-    GulpJS `http://gulpjs.com/`
-    BrowserSync `http://www.browsersync.io`
+Timber and Twitter Bootstrap combined into one very useful WordPress theme.  
+Preprocessed via sass (scss), compiled via gulp, refreshed via BrowserSync, and managed by npm and bower.
+
+- Timber `http://upstatement.com/timber/`
+- Twitter Bootstrap `http://getbootstrap.com/`
+- GulpJS `http://gulpjs.com/`
+- BrowserSync `http://www.browsersync.io`
     
 ## Installation and running tasks
 
@@ -16,7 +16,7 @@ Install [WordPress](https://wordpress.org/) then log into the admin and navigate
 
 Clone this repo into your themes directory, i.e.
 
-    `/wp-content/themes/timber-bootstrap-sass`
+    /wp-content/themes/timber-bootstrap-sass
     
 Now navigate in the wordpress admin to Appearance and activate the Timber Bootstrap theme.
 
