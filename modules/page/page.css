@@ -2,11 +2,7 @@
  * Page
  * @class page
  */
-
-.page {
-}
-
+/* line 9, /Users/joshlevinson/Projects/VVV/www/wordpress-default/wp-content/themes/timber-bootstrap/modules/page/page.scss */
 .page img {
-    max-width: 100%;
-    height: auto;
-}
+  max-width: 100%;
+  height: auto; }
