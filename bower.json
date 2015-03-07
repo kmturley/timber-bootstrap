@@ -1,0 +1,20 @@
+{
+  "name": "timber-bootstrap-sass",
+  "version": "1.0.0",
+  "homepage": "https://github.com/joshlevinson/timber-bootstrap-sass",
+  "authors": [
+    "Josh Levinson <joshalevinson@gmail.com>"
+  ],
+  "description": "Timber + Bootstrap + Sass + Gulp",
+  "license": "GPLv2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.3"
+  }
+}

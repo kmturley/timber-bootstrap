@@ -6,10 +6,10 @@
     <meta name="description" content="{{ site.description }}" />
     <title>{{ site.title }}</title>
     <link rel="icon" href="{{ site.theme.link }}/img/favicon.ico" />
-    <link href="{{ site.theme.link }}/libs/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="{{ site.theme.link }}/modules/app/app.css" rel="stylesheet" />
     {% block head %}
     {% endblock %}
+		{{ function('wp_head') }}
 </head>
 <body class="app">
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -37,10 +37,10 @@
             Template not found
         {% endblock %}
     </div>
-    <script src="{{ site.theme.link }}/libs/jquery/jquery-1.11.2.min.js"></script>
-    <script src="{{ site.theme.link }}/libs/bootstrap/bootstrap.min.js"></script>
+    <script src="{{ site.theme.link }}/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
     <script src="{{ site.theme.link }}/modules/app/app.js"></script>
     {% block foot %}
     {% endblock %}
+    {{function('wp_footer')}}
 </body>
 </html>
